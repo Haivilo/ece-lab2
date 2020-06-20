@@ -1,0 +1,63 @@
+|LogicalStep_Lab2_top
+pb[0] => hex_mux:inst1.mux_select[0]
+pb[1] => hex_mux:inst1.mux_select[1]
+pb[2] => ~NO_FANOUT~
+pb[3] => ~NO_FANOUT~
+pb[4] => ~NO_FANOUT~
+pb[5] => ~NO_FANOUT~
+pb[6] => ~NO_FANOUT~
+sw[0] => hex_mux:inst1.hex_num0[0]
+sw[1] => hex_mux:inst1.hex_num0[1]
+sw[2] => hex_mux:inst1.hex_num0[2]
+sw[3] => hex_mux:inst1.hex_num0[3]
+sw[4] => hex_mux:inst1.hex_num1[0]
+sw[5] => hex_mux:inst1.hex_num1[1]
+sw[6] => hex_mux:inst1.hex_num1[2]
+sw[7] => hex_mux:inst1.hex_num1[3]
+sw[8] => hex_mux:inst1.hex_num2[0]
+sw[9] => hex_mux:inst1.hex_num2[1]
+sw[10] => hex_mux:inst1.hex_num2[2]
+sw[11] => hex_mux:inst1.hex_num2[3]
+sw[12] => hex_mux:inst1.hex_num3[0]
+sw[13] => hex_mux:inst1.hex_num3[1]
+sw[14] => hex_mux:inst1.hex_num3[2]
+sw[15] => hex_mux:inst1.hex_num3[3]
+leds[0] << hex_mux:inst1.hex_out[0]
+leds[1] << hex_mux:inst1.hex_out[1]
+leds[2] << hex_mux:inst1.hex_out[2]
+leds[3] << hex_mux:inst1.hex_out[3]
+leds[4] << <GND>
+leds[5] << <GND>
+
+
+|LogicalStep_Lab2_top|hex_mux:inst1
+hex_num3[0] => Mux3.IN0
+hex_num3[1] => Mux2.IN0
+hex_num3[2] => Mux1.IN0
+hex_num3[3] => Mux0.IN0
+hex_num2[0] => Mux3.IN1
+hex_num2[1] => Mux2.IN1
+hex_num2[2] => Mux1.IN1
+hex_num2[3] => Mux0.IN1
+hex_num1[0] => Mux3.IN2
+hex_num1[1] => Mux2.IN2
+hex_num1[2] => Mux1.IN2
+hex_num1[3] => Mux0.IN2
+hex_num0[0] => Mux3.IN3
+hex_num0[1] => Mux2.IN3
+hex_num0[2] => Mux1.IN3
+hex_num0[3] => Mux0.IN3
+mux_select[0] => Mux0.IN5
+mux_select[0] => Mux1.IN5
+mux_select[0] => Mux2.IN5
+mux_select[0] => Mux3.IN5
+mux_select[1] => Mux0.IN4
+mux_select[1] => Mux1.IN4
+mux_select[1] => Mux2.IN4
+mux_select[1] => Mux3.IN4
+hex_out[0] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+hex_out[1] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+hex_out[2] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+hex_out[3] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
