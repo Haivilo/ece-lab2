@@ -48,7 +48,8 @@ end component;
 -- groups of logic signals with each group defined as std_logic_vector(MSB downto LSB)
 	signal hex_A, hex_B, hex_C, hex_D		: std_logic_vector(3 downto 0);
 --- some mux_selector nets
-	signal mux_sel									: std_logic_vector(1 downto 0);
+	signal pbs									: std_logic_vector(1 downto 0);
+
 	
 -------------------------------------------------------------------
 -------------------------------------------------------------------
@@ -58,7 +59,7 @@ begin
 -- assign (connect) one end of each input group (bus) to sepecific switch inputs
 hex_A <= sw(3 downto 0);
 hex_B <= sw(7 downto 4);
-pbs <= pb(1 downto 0)
+pbs <= pb(1 downto 0);
 -- hex_C <= sw(11 downto 8);
 -- hex_D <= sw(15 downto 12);
 -- -- the other ends of hex_A - hex_D will connect to other parts of the circuit in the design
@@ -77,7 +78,8 @@ pbs <= pb(1 downto 0)
 
 -- input to 4bit adder and output to leds(5 to 0)
 inst1: logical_processor_steveningzhi port map(
-	 hex_A, hex_B,pbs,
+	 hex_A, hex_B,
+	 pbs,
 	leds(3 downto 0)
 	);
 

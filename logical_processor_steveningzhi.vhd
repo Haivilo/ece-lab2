@@ -12,17 +12,13 @@ entity logical_processor_steveningzhi is
         );
 end logical_processor_steveningzhi;
 
-architecture Circuit of logical_processor_steveningzhi is
+architecture Log_Circuit of logical_processor_steveningzhi is
 
 -- Declare any Components to be Used ---
 ------------------------------------------------------------------- 
 -------------------------------------------------------------------
 
 -- Declare any signals to be used within the design---
--------------------------------------------------------------------
-
-
--------------------------------------------------------------------
 -------------------------------------------------------------------
 begin 
 
@@ -36,6 +32,4 @@ hex_out <= hex_num0 AND hex_num1 when "00",
            hex_num0 XNOR hex_num1 when "11";
 
 
-
-end logical_processor_steveningzhi;
-
+end Log_Circuit;
