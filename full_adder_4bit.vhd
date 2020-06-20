@@ -52,4 +52,4 @@ adder3: full_adder_1bit port map (cout(2), hex_val_A(3), hex_val_B(3), hex_sum(3
 											
 carry_out <= cout(3);
 
-end circuit;
+end Circuit;
