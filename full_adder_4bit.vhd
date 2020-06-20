@@ -46,9 +46,9 @@ adder1: full_adder_1bit port map (cout(0), hex_val_A(1), hex_val_B(1), hex_sum(1
 
 -- complete the instance connections for adder2 and adder3
 											
-adder2: .......;
+adder2: full_adder_1bit port map (cout(1), hex_val_A(2), hex_val_B(2), hex_sum(2), cout(2));
 											
-adder3: ........;
+adder3: full_adder_1bit port map (cout(2), hex_val_A(3), hex_val_B(3), hex_sum(3), cout(3));
 											
 carry_out <= cout(3);
 
