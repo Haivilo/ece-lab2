@@ -22,12 +22,12 @@ sw[12] => ~NO_FANOUT~
 sw[13] => ~NO_FANOUT~
 sw[14] => ~NO_FANOUT~
 sw[15] => ~NO_FANOUT~
-leds[0] <= full_adder_4bit:inst1.hex_sum[0]
-leds[1] <= full_adder_4bit:inst1.hex_sum[1]
-leds[2] <= full_adder_4bit:inst1.hex_sum[2]
-leds[3] <= full_adder_4bit:inst1.hex_sum[3]
-leds[4] <= full_adder_4bit:inst1.carry_out
-leds[5] <= <GND>
+leds[0] << full_adder_4bit:inst1.hex_sum[0]
+leds[1] << full_adder_4bit:inst1.hex_sum[1]
+leds[2] << full_adder_4bit:inst1.hex_sum[2]
+leds[3] << full_adder_4bit:inst1.hex_sum[3]
+leds[4] << full_adder_4bit:inst1.carry_out
+leds[5] << <GND>
 
 
 |LogicalStep_Lab2_top|full_adder_4bit:inst1

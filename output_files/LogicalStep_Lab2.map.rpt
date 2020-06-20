@@ -1,5 +1,5 @@
 Analysis & Synthesis report for LogicalStep_Lab2
-Sat Jun 20 15:56:10 2020
+Sat Jun 20 16:22:18 2020
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
@@ -43,7 +43,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat Jun 20 15:56:09 2020       ;
+; Analysis & Synthesis Status        ; Successful - Sat Jun 20 16:22:18 2020       ;
 ; Quartus Prime Version              ; 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
 ; Revision Name                      ; LogicalStep_Lab2                            ;
 ; Top-level Entity Name              ; LogicalStep_Lab2_top                        ;
@@ -268,7 +268,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
-    Info: Processing started: Sat Jun 20 15:55:42 2020
+    Info: Processing started: Sat Jun 20 16:21:51 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off LogicalStep_Lab2 -c LogicalStep_Lab2
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -313,9 +313,9 @@ Info (21057): Implemented 37 device resources after synthesis - the final resour
     Info (21059): Implemented 6 output pins
     Info (21061): Implemented 8 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 19 warnings
-    Info: Peak virtual memory: 4786 megabytes
-    Info: Processing ended: Sat Jun 20 15:56:10 2020
-    Info: Elapsed time: 00:00:28
+    Info: Peak virtual memory: 4787 megabytes
+    Info: Processing ended: Sat Jun 20 16:22:18 2020
+    Info: Elapsed time: 00:00:27
     Info: Total CPU time (on all processors): 00:00:19
 
 
