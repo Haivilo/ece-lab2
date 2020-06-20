@@ -16,8 +16,6 @@ entity hex_mux is
  begin
  
  -- complete the with/select construct with the VHDL coding from the Lab Manual for Lab2.
- 
- -- output corresponding input based on binary values
  with mux_select (1 downto 0) select
  hex_out <= hex_num0 when "00",
 			hex_num1 when "01",

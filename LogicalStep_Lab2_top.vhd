@@ -68,10 +68,10 @@ hex_B <= sw(7 downto 4);
 
 -- input to 4bit adder and output to leds(5 to 0)
 inst1: full_adder_4bit port map(
-	"0", hex_A, hex_B,
+	pb(0), hex_A, hex_B,
 	leds(3 downto 0),
 	leds(4)
-	)	
+	);
 
 end Circuit;
 
