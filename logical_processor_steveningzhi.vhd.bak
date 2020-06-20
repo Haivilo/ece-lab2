@@ -21,20 +21,16 @@ architecture Circuit of logical_processor_steveningzhi is
 -- Declare any signals to be used within the design---
 -------------------------------------------------------------------
 
-
--------------------------------------------------------------------
--------------------------------------------------------------------
-begin 
+signal half_adder_sum, half_adder_carry	: std_logic;
 
 -------------------------------------------------------------------
 -------------------------------------------------------------------
 
-with logic_select (1 downto 0) select
+with mux_select (1 downto 0) select
 hex_out <= hex_num0 AND hex_num1 when "00",
            hex_num0 OR hex_num1 when "01",
            hex_num0 XOR hex_num1 when "10",
            hex_num0 XNOR hex_num1 when "11";
-
 
 
 end logical_processor_steveningzhi;

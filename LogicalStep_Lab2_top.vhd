@@ -33,6 +33,14 @@ component full_adder_4bit
 			);
 
 end component;
+
+component logical_processor_steveningzhi 
+    port (
+        hex_num1, hex_num0 : in std_logic_vector(3 downto 0);
+        logic_select 		: in std_logic_vector(1 downto 0); 
+        hex_out				: out std_logic_vector(3 downto 0)
+        );
+end component;
 -- 
 -------------------------------------------------------
 -- Declare any signals here to be used within the design ---
@@ -50,6 +58,7 @@ begin
 -- assign (connect) one end of each input group (bus) to sepecific switch inputs
 hex_A <= sw(3 downto 0);
 hex_B <= sw(7 downto 4);
+pbs <= pb(1 downto 0)
 -- hex_C <= sw(11 downto 8);
 -- hex_D <= sw(15 downto 12);
 -- -- the other ends of hex_A - hex_D will connect to other parts of the circuit in the design
@@ -67,10 +76,9 @@ hex_B <= sw(7 downto 4);
 -- 						);
 
 -- input to 4bit adder and output to leds(5 to 0)
-inst1: full_adder_4bit port map(
-	pb(0), hex_A, hex_B,
-	leds(3 downto 0),
-	leds(4)
+inst1: logical_processor_steveningzhi port map(
+	 hex_A, hex_B,pbs,
+	leds(3 downto 0)
 	);
 
 end Circuit;
