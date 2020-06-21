@@ -3,7 +3,7 @@ $comment
 		vcd file LogicalStep_Lab2.msim.vcd -direction
 $end
 $date
-	Sat Jun 20 17:11:26 2020
+	Sat Jun 20 18:09:43 2020
 $end
 $version
 	ModelSim Version 10.5b
@@ -82,43 +82,39 @@ $var wire 1 ` ww_leds [3] $end
 $var wire 1 a ww_leds [2] $end
 $var wire 1 b ww_leds [1] $end
 $var wire 1 c ww_leds [0] $end
-$var wire 1 d \pb[1]~input_o\ $end
-$var wire 1 e \pb[2]~input_o\ $end
-$var wire 1 f \pb[3]~input_o\ $end
-$var wire 1 g \pb[4]~input_o\ $end
-$var wire 1 h \pb[5]~input_o\ $end
-$var wire 1 i \pb[6]~input_o\ $end
-$var wire 1 j \sw[8]~input_o\ $end
-$var wire 1 k \sw[9]~input_o\ $end
-$var wire 1 l \sw[10]~input_o\ $end
-$var wire 1 m \sw[11]~input_o\ $end
-$var wire 1 n \sw[12]~input_o\ $end
-$var wire 1 o \sw[13]~input_o\ $end
-$var wire 1 p \sw[14]~input_o\ $end
-$var wire 1 q \sw[15]~input_o\ $end
-$var wire 1 r \leds[0]~output_o\ $end
-$var wire 1 s \leds[1]~output_o\ $end
-$var wire 1 t \leds[2]~output_o\ $end
-$var wire 1 u \leds[3]~output_o\ $end
-$var wire 1 v \leds[4]~output_o\ $end
-$var wire 1 w \leds[5]~output_o\ $end
-$var wire 1 x \pb[0]~input_o\ $end
+$var wire 1 d \pb[2]~input_o\ $end
+$var wire 1 e \pb[3]~input_o\ $end
+$var wire 1 f \pb[4]~input_o\ $end
+$var wire 1 g \pb[5]~input_o\ $end
+$var wire 1 h \pb[6]~input_o\ $end
+$var wire 1 i \sw[8]~input_o\ $end
+$var wire 1 j \sw[9]~input_o\ $end
+$var wire 1 k \sw[10]~input_o\ $end
+$var wire 1 l \sw[11]~input_o\ $end
+$var wire 1 m \sw[12]~input_o\ $end
+$var wire 1 n \sw[13]~input_o\ $end
+$var wire 1 o \sw[14]~input_o\ $end
+$var wire 1 p \sw[15]~input_o\ $end
+$var wire 1 q \leds[0]~output_o\ $end
+$var wire 1 r \leds[1]~output_o\ $end
+$var wire 1 s \leds[2]~output_o\ $end
+$var wire 1 t \leds[3]~output_o\ $end
+$var wire 1 u \leds[4]~output_o\ $end
+$var wire 1 v \leds[5]~output_o\ $end
+$var wire 1 w \pb[0]~input_o\ $end
+$var wire 1 x \sw[4]~input_o\ $end
 $var wire 1 y \sw[0]~input_o\ $end
-$var wire 1 z \sw[4]~input_o\ $end
-$var wire 1 { \inst1|adder0|bit_sum~0_combout\ $end
+$var wire 1 z \pb[1]~input_o\ $end
+$var wire 1 { \inst1|Mux3~0_combout\ $end
 $var wire 1 | \sw[5]~input_o\ $end
 $var wire 1 } \sw[1]~input_o\ $end
-$var wire 1 ~ \inst1|adder0|carry_out_bit~0_combout\ $end
-$var wire 1 !! \inst1|adder1|bit_sum~combout\ $end
-$var wire 1 "! \inst1|adder1|carry_out_bit~0_combout\ $end
-$var wire 1 #! \sw[2]~input_o\ $end
-$var wire 1 $! \sw[6]~input_o\ $end
-$var wire 1 %! \inst1|adder2|bit_sum~combout\ $end
-$var wire 1 &! \inst1|adder2|carry_out_bit~0_combout\ $end
-$var wire 1 '! \sw[3]~input_o\ $end
-$var wire 1 (! \sw[7]~input_o\ $end
-$var wire 1 )! \inst1|adder3|bit_sum~combout\ $end
-$var wire 1 *! \inst1|adder3|carry_out_bit~0_combout\ $end
+$var wire 1 ~ \inst1|Mux2~0_combout\ $end
+$var wire 1 !! \sw[6]~input_o\ $end
+$var wire 1 "! \sw[2]~input_o\ $end
+$var wire 1 #! \inst1|Mux1~0_combout\ $end
+$var wire 1 $! \sw[7]~input_o\ $end
+$var wire 1 %! \sw[3]~input_o\ $end
+$var wire 1 &! \inst1|Mux0~0_combout\ $end
 $upscope $end
 $upscope $end
 $enddefinitions $end
@@ -146,36 +142,32 @@ xm
 xn
 xo
 xp
-xq
+0q
 0r
 0s
 0t
 0u
 0v
 0w
-0x
+1x
 0y
 0z
 0{
 0|
-0}
+1}
 0~
 0!!
-0"!
+1"!
 0#!
 0$!
-0%!
+1%!
 0&!
-0'!
-0(!
-0)!
-0*!
 x'
 x(
 x)
 x*
 x+
-x,
+0,
 0-
 x.
 x/
@@ -188,10 +180,10 @@ x5
 06
 07
 08
-09
-0:
-0;
-0<
+19
+1:
+1;
+1<
 0=
 0!
 0"
@@ -204,7 +196,7 @@ xH
 xI
 xJ
 xK
-xL
+0L
 0M
 xN
 xO
@@ -217,10 +209,10 @@ xU
 0V
 0W
 0X
-0Y
-0Z
-0[
-0\
+1Y
+1Z
+1[
+1\
 0]
 0^
 0_
@@ -229,72 +221,256 @@ xU
 0b
 0c
 $end
-#250000
-1=
-19
-1]
-1Y
-1z
-1y
+#60000
+18
+1X
+1|
 1~
-1!!
-1s
+1r
 1b
 1%
-#500000
-0=
-09
-1<
-1;
-1:
-18
-17
-16
-0]
-1\
-1[
-1Z
-0Y
-1X
-1W
-1V
-1(!
-1$!
-1|
-0z
-1'!
-1#!
-1}
-0y
+#62000
+0<
+0\
+0}
 0~
-1"!
-1&!
-1*!
-1v
-1)!
-1%!
-0!!
-1_
-0s
-1t
-1u
-1"
+0r
 0b
-1a
-1`
 0%
+#122000
+17
+1W
+1!!
+1#!
+1s
+1a
+1$
+#124000
+0;
+0[
+0"!
+0#!
+0s
+0a
+0$
+#184000
+16
+1V
+1$!
+1&!
+1t
+1`
+1#
+#186000
+0:
+0Z
+0%!
+0&!
+0t
+0`
+0#
+#248000
+09
+0Y
+0x
+#250000
+1,
+1=
+1L
+1]
+1y
+1z
+1~
+1#!
+1&!
+1{
+1q
+1t
+1s
+1r
+1c
+1`
+1a
+1b
+1&
+1%
 1$
 1#
-#750000
-1=
-19
-1]
-1Y
-1z
-1y
+#310000
+08
+0X
+0|
+0~
+0r
+0b
+0%
+#312000
+1<
+1\
+1}
 1~
-1!!
-1s
+1r
 1b
 1%
+#372000
+07
+0W
+0!!
+0#!
+0s
+0a
+0$
+#374000
+1;
+1[
+1"!
+1#!
+1s
+1a
+1$
+#434000
+06
+0V
+0$!
+0&!
+0t
+0`
+0#
+#436000
+1:
+1Z
+1%!
+1&!
+1t
+1`
+1#
+#498000
+19
+1Y
+1x
+0{
+0q
+0c
+0&
+#500000
+0,
+0=
+1-
+1M
+0L
+0]
+0y
+0z
+1w
+1{
+1q
+1c
+1&
+#560000
+18
+1X
+1|
+#562000
+0<
+0\
+0}
+#622000
+17
+1W
+1!!
+#624000
+0;
+0[
+0"!
+#684000
+16
+1V
+1$!
+#686000
+0:
+0Z
+0%!
+#748000
+09
+0Y
+0x
+0{
+0q
+0c
+0&
+#750000
+1,
+1=
+1L
+1]
+1y
+1z
+0~
+0#!
+0&!
+0t
+0s
+0r
+0`
+0a
+0b
+0%
+0$
+0#
+#810000
+08
+0X
+0|
+1~
+1r
+1b
+1%
+#812000
+1<
+1\
+1}
+0~
+0r
+0b
+0%
+#872000
+07
+0W
+0!!
+1#!
+1s
+1a
+1$
+#874000
+1;
+1[
+1"!
+0#!
+0s
+0a
+0$
+#934000
+06
+0V
+0$!
+1&!
+1t
+1`
+1#
+#936000
+1:
+1Z
+1%!
+0&!
+0t
+0`
+0#
+#998000
+19
+1Y
+1x
+1{
+1q
+1c
+1&
 #1000000

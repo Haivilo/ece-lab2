@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 dN:/ECE-125/Lab2/simulation/qsim
 Elogicalstep_lab2_top
-Z1 w1592687483
+Z1 w1592690981
 Z2 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
 Z3 DPx11 fiftyfivenm 21 fiftyfivenm_atom_pack 0 22 hIbO9BBYYWGW_8lVV<F893
 Z4 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
@@ -25,9 +25,9 @@ V8<TbNK2Pz80go87^H^Fmn0
 !s100 J3H3RBNXQeLbeKDFfD2gX0
 Z10 OV;C;10.5b;63
 32
-Z11 !s110 1592687485
+Z11 !s110 1592690982
 !i10b 1
-Z12 !s108 1592687484.000000
+Z12 !s108 1592690982.000000
 Z13 !s90 -work|work|LogicalStep_Lab2.vho|
 Z14 !s107 LogicalStep_Lab2.vho|
 !i113 1
@@ -41,10 +41,10 @@ R5
 R6
 R7
 DEx4 work 20 logicalstep_lab2_top 0 22 8<TbNK2Pz80go87^H^Fmn0
-l94
+l90
 L43
-VhR>76hoRdZ:YKYaK_X<c>2
-!s100 90Si[XEPW=[;f3bM@Xe;g3
+VGjCgQHnD[<9h[RiSc3_F13
+!s100 2MiVfIHfSC:L^2`DhTaQL0
 R10
 32
 R11
@@ -56,12 +56,12 @@ R14
 R15
 R16
 Elogicalstep_lab2_top_vhd_vec_tst
-Z17 w1592687467
+Z17 w1592690964
 R5
 R6
 R0
-Z18 8Waveform2.vwf.vht
-Z19 FWaveform2.vwf.vht
+Z18 8Waveform3.vwf.vht
+Z19 FWaveform3.vwf.vht
 l0
 L32
 VjneBQNHSM1P=gCcDk<WbB3
@@ -70,27 +70,27 @@ R10
 32
 R11
 !i10b 1
-Z20 !s108 1592687485.000000
-Z21 !s90 -work|work|Waveform2.vwf.vht|
-Z22 !s107 Waveform2.vwf.vht|
+R12
+Z20 !s90 -work|work|Waveform3.vwf.vht|
+Z21 !s107 Waveform3.vwf.vht|
 !i113 1
 R15
 R16
 Alogicalstep_lab2_top_arch
 R5
 R6
-Z23 DEx4 work 32 logicalstep_lab2_top_vhd_vec_tst 0 22 jneBQNHSM1P=gCcDk<WbB3
+Z22 DEx4 work 32 logicalstep_lab2_top_vhd_vec_tst 0 22 jneBQNHSM1P=gCcDk<WbB3
 l47
 L34
-Ve:QzehF]Cc@[lMmmRzY:^2
-!s100 DjFIWSaCA>b8g6f9]3[9A0
+VH?<@_?;LQnE7zPS[7B:[E3
+!s100 =FECR2Fl1dN_DIlKVT?8>3
 R10
 32
 R11
 !i10b 1
+R12
 R20
 R21
-R22
 !i113 1
 R15
 R16

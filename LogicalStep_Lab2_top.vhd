@@ -33,7 +33,7 @@ end component;
 	signal hex_A, hex_B, hex_C, hex_D		: std_logic_vector(3 downto 0);
 --- some mux_selector nets
 	signal opSelA, opSelB, log_fun_sel							: std_logic_vector(1 downto 0);
-	signal addLogSel :std_logic
+	signal addLogSel :std_logic;
 	
 -------------------------------------------------------------------
 -------------------------------------------------------------------
@@ -58,7 +58,7 @@ addLogSel <=pb(6);
 inst1: aluSteveNingzhi port map(
 	 hex_D,hex_C,hex_B,hex_A,
 	 opSelA,opSelB,log_fun_sel,addLogSel,
-	leds(3 downto 0),leds(4 down to 0),leds(5)
+	leds(4 downto 0),leds(5)
 	);
 
 end Circuit;

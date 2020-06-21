@@ -61,12 +61,13 @@ end component;
 -- add instances to complete the Full_Adder_4bit design
 begin
 
+adder0: full_adder_1bit port map (cin, hex_val_A(0), hex_val_B(0),hex_sum(0), cout(0));
 getA: hex_mux port map(
 						hex_D, hex_C, hex_B, hex_A, 
 						opSel_A,
 						info_A
                         );
-getB: hex_mux port map(
+getA: hex_mux port map(
 						hex_D, hex_C, hex_B, hex_A, 
 						opSel_B,
 						info_B
@@ -86,13 +87,8 @@ getAdd: full_adder_4bit port map(
                                 );
 
 with addOrLog select
-addResult(3 downto 0) <= out_add(3 downto 0) when '0',
-			 out_logic when '1';
-
-addResult(4) <= (NOT addOrLog) AND out_add(4);
---with addOrLog select
---logResult <= out_logic when '1';
-
+logResult <= out_log when "1";
+addResult <= out_add when "0";
 flag <= addOrLog;
 
 end Circuit;

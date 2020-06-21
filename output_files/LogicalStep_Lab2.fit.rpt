@@ -1,5 +1,5 @@
 Fitter report for LogicalStep_Lab2
-Sat Jun 20 18:00:10 2020
+Sat Jun 20 19:25:44 2020
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
@@ -63,7 +63,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Sat Jun 20 18:00:10 2020       ;
+; Fitter Status                      ; Successful - Sat Jun 20 19:25:44 2020       ;
 ; Quartus Prime Version              ; 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
 ; Revision Name                      ; LogicalStep_Lab2                            ;
 ; Top-level Entity Name              ; LogicalStep_Lab2_top                        ;
@@ -1345,9 +1345,9 @@ Info (334004): Delay annotation completed successfully
 Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
 Info (144001): Generated suppressed messages file N:/ECE-125/Lab2/output_files/LogicalStep_Lab2.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 5319 megabytes
-    Info: Processing ended: Sat Jun 20 18:00:13 2020
-    Info: Elapsed time: 00:00:24
+    Info: Peak virtual memory: 5320 megabytes
+    Info: Processing ended: Sat Jun 20 19:25:47 2020
+    Info: Elapsed time: 00:00:23
     Info: Total CPU time (on all processors): 00:00:04
 
 
