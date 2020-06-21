@@ -20,8 +20,7 @@ component aluSteveNingzhi is
 		   hex_D, hex_C, hex_B, hex_A 	: in std_logic_vector(3 downto 0);
 		   opSel_A,opSel_B,logicFun    : in std_logic_vector(1 downto 0);
 		   addOrLog                    : in std_logic;
-		   logResult 					: out std_logic_vector(3 downto 0);
-		   addResult                   : out std_logic_vector(4 downto 0);
+		   result                   : out std_logic_vector(4 downto 0);
 		   flag                        : out std_logic
 		   );
 end component;

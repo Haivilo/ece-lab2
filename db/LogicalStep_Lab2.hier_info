@@ -22,12 +22,12 @@ sw[12] => aluSteveNingzhi:inst1.hex_D[0]
 sw[13] => aluSteveNingzhi:inst1.hex_D[1]
 sw[14] => aluSteveNingzhi:inst1.hex_D[2]
 sw[15] => aluSteveNingzhi:inst1.hex_D[3]
-leds[0] << leds[0].DB_MAX_OUTPUT_PORT_TYPE
-leds[1] << leds[1].DB_MAX_OUTPUT_PORT_TYPE
-leds[2] << leds[2].DB_MAX_OUTPUT_PORT_TYPE
-leds[3] << leds[3].DB_MAX_OUTPUT_PORT_TYPE
-leds[4] << aluSteveNingzhi:inst1.addResult[4]
-leds[5] << aluSteveNingzhi:inst1.flag
+leds[0] <= aluSteveNingzhi:inst1.result[0]
+leds[1] <= aluSteveNingzhi:inst1.result[1]
+leds[2] <= aluSteveNingzhi:inst1.result[2]
+leds[3] <= aluSteveNingzhi:inst1.result[3]
+leds[4] <= aluSteveNingzhi:inst1.result[4]
+leds[5] <= aluSteveNingzhi:inst1.flag
 
 
 |LogicalStep_Lab2_top|aluSteveNingzhi:inst1
@@ -70,20 +70,16 @@ opSel_B[1] => hex_mux:getB.mux_select[1]
 logicFun[0] => logical_processor_steveningzhi:getLogic.logic_select[0]
 logicFun[1] => logical_processor_steveningzhi:getLogic.logic_select[1]
 addOrLog => flag.DATAIN
-addOrLog => addResult.OUTPUTSELECT
-addOrLog => addResult.OUTPUTSELECT
-addOrLog => addResult.OUTPUTSELECT
-addOrLog => addResult.OUTPUTSELECT
-addOrLog => addResult.IN1
-logResult[0] <= comb.DB_MAX_OUTPUT_PORT_TYPE
-logResult[1] <= logResult[1].DB_MAX_OUTPUT_PORT_TYPE
-logResult[2] <= logResult[2].DB_MAX_OUTPUT_PORT_TYPE
-logResult[3] <= logResult[3].DB_MAX_OUTPUT_PORT_TYPE
-addResult[0] <= addResult.DB_MAX_OUTPUT_PORT_TYPE
-addResult[1] <= addResult.DB_MAX_OUTPUT_PORT_TYPE
-addResult[2] <= addResult.DB_MAX_OUTPUT_PORT_TYPE
-addResult[3] <= addResult.DB_MAX_OUTPUT_PORT_TYPE
-addResult[4] <= addResult.DB_MAX_OUTPUT_PORT_TYPE
+addOrLog => result.OUTPUTSELECT
+addOrLog => result.OUTPUTSELECT
+addOrLog => result.OUTPUTSELECT
+addOrLog => result.OUTPUTSELECT
+addOrLog => result.IN1
+result[0] <= result.DB_MAX_OUTPUT_PORT_TYPE
+result[1] <= result.DB_MAX_OUTPUT_PORT_TYPE
+result[2] <= result.DB_MAX_OUTPUT_PORT_TYPE
+result[3] <= result.DB_MAX_OUTPUT_PORT_TYPE
+result[4] <= result.DB_MAX_OUTPUT_PORT_TYPE
 flag <= addOrLog.DB_MAX_OUTPUT_PORT_TYPE
 
 
