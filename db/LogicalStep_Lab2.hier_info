@@ -22,12 +22,12 @@ sw[12] => aluSteveNingzhi:inst1.hex_D[0]
 sw[13] => aluSteveNingzhi:inst1.hex_D[1]
 sw[14] => aluSteveNingzhi:inst1.hex_D[2]
 sw[15] => aluSteveNingzhi:inst1.hex_D[3]
-leds[0] <= aluSteveNingzhi:inst1.result[0]
-leds[1] <= aluSteveNingzhi:inst1.result[1]
-leds[2] <= aluSteveNingzhi:inst1.result[2]
-leds[3] <= aluSteveNingzhi:inst1.result[3]
-leds[4] <= aluSteveNingzhi:inst1.result[4]
-leds[5] <= aluSteveNingzhi:inst1.flag
+leds[0] << aluSteveNingzhi:inst1.result[0]
+leds[1] << aluSteveNingzhi:inst1.result[1]
+leds[2] << aluSteveNingzhi:inst1.result[2]
+leds[3] << aluSteveNingzhi:inst1.result[3]
+leds[4] << aluSteveNingzhi:inst1.result[4]
+leds[5] << aluSteveNingzhi:inst1.flag
 
 
 |LogicalStep_Lab2_top|aluSteveNingzhi:inst1
